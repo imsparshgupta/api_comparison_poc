@@ -1,0 +1,13 @@
+type Company {
+    id: ID!
+    name: String!
+    address: String!
+}
+
+type Query {
+    allCompanies: [Company]
+}
+
+type Mutation {
+    createCompany(name: String!, address: String!): Company
+}
